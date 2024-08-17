@@ -1,0 +1,20 @@
+.form{
+    border: 2px black solid;
+    max-width: 80%;
+    margin:10px 200px;
+    border-radius: 25px;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+textarea{
+    border-radius: 5px;
+    display:flex;
+}
+label{
+    background: rgb(153, 206, 244);
+    width: 100px;
+}

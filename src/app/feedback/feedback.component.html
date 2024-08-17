@@ -1,0 +1,40 @@
+
+<h1>Fill The Feedback Form </h1>
+<div class="form">
+    <form method="post" id="feedback" #myform="ngForm" (ngSubmit)="saveForm(myform.value)">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1" style="background-color: rgb(153, 206, 244);">Username</span>
+        <input type="text" class="form-control" id="username" name="Username" placeholder="Enter ur Username" required ngModel>
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="sel01">Platform  :</label>
+        <select class="form-select" name="Platform" id="sel01" ngModel>
+          <option value="None">Choose...</option>
+          <option value="Bad">Bad</option>
+          <option value="Good">Good</option>
+          <option value="Excellent">Excellent</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="sel02">Concept  :</label>
+        <select class="form-select" name="Concept" id="sel02" ngModel>
+            <option value="None">Choose...</option>
+            <option value="Bad">Bad</option>
+            <option value="Good">Good</option>
+            <option value="Excellent">Excellent</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="sel03">Trainer   :</label>
+        <select class="form-select" name="Trainer" id="sel03" ngModel>
+            <option selected>Choose...</option>
+            <option value="Bad">Bad</option>
+            <option value="Good">Good</option>
+            <option value="Excellent">Excellent</option>
+          </select>
+      </div>
+    <div>
+        <textarea class="form-control" placeholder="Comment overall expirence" name="Comment" id="Comment" rows="2" cols="83" [maxLength]="50" ngModel></textarea>
+        <br><input type="submit" value="SUBMIT"></div>
+</form>
+</div>

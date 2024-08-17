@@ -1,0 +1,23 @@
+.header{
+    background-color: rgb(153, 206, 244);
+    height: 250px;
+    display: flex;
+}
+img{
+    width: 350px;
+    height: 250px;
+}
+.name{
+    margin: auto;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.strength{
+    margin: auto;
+    text-align: center;
+}
+.vl{
+    border-left:  2px solid black;
+    margin-top: 70px;
+    height: 100px;
+}
